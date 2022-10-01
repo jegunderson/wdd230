@@ -1,11 +1,18 @@
+header{
+    background-color: #303f9f;
+    width: 100%;
+}
 #content{
     font-size: 14pt;
     /* background-color: #ffff72; */
     background-color: #ffeb3b;
+    width: 80%;
 }
 nav {
     border: 5px black solid;
     background-color: #303f9f;
+    grid-column-start: 1;
+    grid-column-end: -1;
 }
 nav, ul{
     list-style: none;
