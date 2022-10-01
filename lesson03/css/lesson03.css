@@ -1,0 +1,55 @@
+#content{
+    font-size: 14pt;
+    /* background-color: #ffff72; */
+    background-color: #ffeb3b;
+}
+nav {
+    border: 5px black solid;
+    background-color: #303f9f;
+}
+nav, ul{
+    list-style: none;
+
+}
+nav,
+li {
+  text-align: center;
+}
+nav
+a {
+  color: #ffeb3b;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color:#303f9f;
+}
+a.active {
+    color: #000000;
+}
+h1{
+    text-align: center;
+}
+hr{
+    font-size: 5px;;
+}
+div #scenarios{
+    border-top: #303f9f;
+    
+}
+
+footer{
+    color: #ffeb3b;
+    background-color: #303f9f;
+    border: 2px black solid;
+    text-align: center;
+}
+@media screen and (min-width: 50em){
+    
+ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+}
+#color-scheme-content{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
