@@ -44,6 +44,12 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #303f9f;
+    color: #ffeb3b;
+}
+
+.socialmedia {
+    height: 1.5em;
+    border-radius: 9px;
 }
 .datediv{
     background-color: #666ad1;
@@ -60,6 +66,7 @@ main div{
 
 footer {
     background-color: #303f9f;
+    color: #ffeb3b;
 }
 @media screen and (min-width: 35rem){
 nav button {
@@ -86,7 +93,11 @@ main{
     grid-template-rows: repeat(3, 1fr);
 }
 }
-    
+  
+footer, image {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media screen and (min-width: 64rem){
 main{
