@@ -15,3 +15,11 @@ x.onclick = togglemenu;
 const date = Date.now();
 
 document.getElementById("datep").innerHTML(date);
+
+
+
+const today = new Date();
+
+if (today.getDay() == 4){
+    document.querySelector("header P").getElementsByClassName.display='block';
+}

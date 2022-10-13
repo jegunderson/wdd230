@@ -1,3 +1,11 @@
+div {
+    border: 1px black solid;
+}
+
+.pageheader {
+    display:inline-block;
+}
+
 nav{
     position: absolute;
     top: 40px;
@@ -41,16 +49,39 @@ nav ul li a:hover {
     background-color: rgba(0,0,0,0.3);
 }
 header{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
     background-color: #303f9f;
     color: #ffeb3b;
 }
 
+header:first-child {
+    position: relative;
+}
+
+.logo {
+    padding-top: 2em;
+    padding-left: 2em;
+    display:inline;
+}
+/*only display on day {
+    display: none;  
+}*/
 .socialmedia {
     height: 2em;
     border-radius: 9px;
+    display:inline-block;
+    position: absolute;
 }
+#facebook{
+    top: 40px;
+    right: 3em;
+}
+#instagram {
+    top: 40px;
+    right: 7em;
+}
+
 .datediv{
     background-color: #666ad1;
     margin: 2em;
@@ -113,5 +144,12 @@ nav ul li a {
     grid-row: 1 / 3;
   }
 
-
+  #facebook{
+    top: 40px;
+    right: 500px;
+}
+#instagram {
+    top: 40px;
+    right: 560px;
+}
 }
