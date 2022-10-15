@@ -92,10 +92,14 @@ header p{
     text-align: center;
 }
 main div{
-    background-color: gray;
     margin: 2px;
+    text-align: center;
+    background-color: #303f9f;
+    font-weight: bold;
 }
-
+main h2 {
+    color: #ffeb3b;
+}
 footer {
     background-color: #303f9f;
     color: #ffeb3b;
@@ -133,6 +137,8 @@ main{
   
 
   .spotlightdiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-row: 3/4;
     grid-column: 1/-1;
   }
@@ -184,6 +190,9 @@ nav ul li a {
   }
 
   .spotlightdiv {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-row: 1 / 4;
     grid-column: 3 / 4;
   }
