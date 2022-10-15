@@ -101,6 +101,7 @@ main div{
 main h2 {
     color: #ffeb3b;
 }
+
 footer {
     background-color: #303f9f;
     color: #ffeb3b;
@@ -218,5 +219,17 @@ grid-column: 1/1;
 #instagram {
     top: 40px;
     right: 560px;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-weight: normal;
+}
+
+.bottomfooter {
+    grid-column: 1 /-1;
+}
+.bottomfooter div {
+    display: inline;
 }
 }
