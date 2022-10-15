@@ -19,7 +19,7 @@ myButton.addEventListener("click", () => {
     myList.append(newItem);
 
     newButton.addEventListener("click", () => {
-        myList.remove();
+        newItem.remove();
     });
 
     
