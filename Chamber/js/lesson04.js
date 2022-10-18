@@ -24,9 +24,11 @@ let month = months[today.getMonth()]
 
 document.getElementById("datep").textContent = `${day}, ${today.getDate()} ${month} ${today.getFullYear()}`;
 
-const lastmodified = new Date(document.lastModified);
-document.getElementById("lastupdatedate").textContent = `${lastmodified.getDate()}/${lastmodified.getMonth()+1}/${lastmodified.getFullYear()} ${lastmodified.getHours()}:${lastmodified.getMinutes()}:${lastmodified.getSeconds()} :-)`;
+// const lastmodified = new Date(document.lastModified);
+// document.getElementById("lastupdatedate").textContent = `${lastmodified.getDate()}/${lastmodified.getMonth()+1}/${lastmodified.getFullYear()} ${lastmodified.getHours()}:${lastmodified.getMinutes()}:${lastmodified.getSeconds()} :-)`;
 
 if (today.getDay() == 4){
     document.querySelector("header P").getElementsByClassName.display='block';
 }
+
+
