@@ -13,7 +13,7 @@ const x = document.getElementById('hamburgerbtn')
 x.onclick = togglemenu;
 
 
-today = new Date();
+var today = new Date();
 document.querySelector("footer div span").textContent = today.getFullYear();
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
