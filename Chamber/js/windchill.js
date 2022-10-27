@@ -18,6 +18,7 @@ function setWindChill(temp, windspeed){
 
     tempobj.innerHTML = `${temp}&deg; F`;
     windspeedobj.textContent = `Windspeed: ${windspeed} mph`;
-    windchillobj.innerHTML = `hi ${windchillmsg}`;
+    windchillobj.innerHTML = `Windchill: ${windchillmsg}`;
+    
 }
 setWindChill(49, 10);
