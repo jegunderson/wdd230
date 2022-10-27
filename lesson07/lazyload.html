@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lazy Loading">
+    <title>Lazy Loading</title>
+    <link rel="stylesheet" href="css/bom.css">
+</head>
+<body>
+    <h1>Lazy Loading Example</h1>
+    <picture>
+        <img src="images/placeholder.png" data-src="" alt="" > 
+    </picture>
+    <picture>
+        <img src="images/placeholder.png" data-src="" alt="" > 
+    </picture>
+    <picture>
+        <img src="images/placeholder.png" data-src="" alt="" > 
+    </picture>
+    <picture>
+        <img src="images/placeholder.png" data-src="" alt="" > 
+    </picture>
+    <picture>
+        <img src="images/placeholder.png" data-src="" alt="" > 
+    </picture>
+    <picture>
+        <img src="images/placeholder.png" data-src="" alt="" > 
+    </picture>
+
+</body>
+<script>
+    let imagesToLoad = document.querySelectorAll("img[data-src]");
+
+    const loadImages = (image) => {
+        image.setAttribute("src", image.getAttribute("data-src"));
+        image.onLoad = () => {
+            image.removeAttribute("data-src");
+        };
+    };
+
+    // Load all the images
+    // imagesToLoad.forEach((img) => {
+    //     loadImages(img);
+    // });
+
+    if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((items, oberver) => {
+            items.forEach((item) => {
+                if (item.isIntersecting) {
+                    loadImages(item.target);
+                    observer.unobserve(item.target);
+                }
+            });
+        });
+
+        imagesToLoad.forEach((img) => {
+            oberver.observe(img);
+        });
+    }
+
+    else {
+        imagesToLoad.forEach((img) => {
+            loadImages(img);
+        });
+    }
+</script>
+</html>
