@@ -6,64 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lazy Loading">
     <title>Lazy Loading</title>
-    <link rel="stylesheet" href="css/bom.css">
+    <link rel="stylesheet" href="css/lazyloader.css">
 </head>
 <body>
     <h1>Lazy Loading Example</h1>
     <picture>
-        <img src="images/placeholder.png" data-src="" alt="" > 
+        <img src="images/placeholder.png" data-src="images/elephant.jpg" alt="Elephant" > 
     </picture>
     <picture>
-        <img src="images/placeholder.png" data-src="" alt="" > 
+        <img src="images/placeholder.png" data-src="images/new_york.jpg" alt="New York Skyline" > 
     </picture>
     <picture>
-        <img src="images/placeholder.png" data-src="" alt="" > 
+        <img src="images/placeholder.png" data-src="images/fox.jpg" alt="Fox" > 
     </picture>
     <picture>
-        <img src="images/placeholder.png" data-src="" alt="" > 
+        <img src="images/placeholder.png" data-src="images/moon.jpg" alt="Moon" > 
     </picture>
     <picture>
-        <img src="images/placeholder.png" data-src="" alt="" > 
+        <img src="images/placeholder.png" data-src="images/raccoon.jpg" alt="Raccoon" > 
     </picture>
     <picture>
-        <img src="images/placeholder.png" data-src="" alt="" > 
+        <img src="images/placeholder.png" data-src="images/chain.jpg" alt="Chain" > 
     </picture>
 
 </body>
-<script>
-    let imagesToLoad = document.querySelectorAll("img[data-src]");
-
-    const loadImages = (image) => {
-        image.setAttribute("src", image.getAttribute("data-src"));
-        image.onLoad = () => {
-            image.removeAttribute("data-src");
-        };
-    };
-
-    // Load all the images
-    // imagesToLoad.forEach((img) => {
-    //     loadImages(img);
-    // });
-
-    if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver((items, oberver) => {
-            items.forEach((item) => {
-                if (item.isIntersecting) {
-                    loadImages(item.target);
-                    observer.unobserve(item.target);
-                }
-            });
-        });
-
-        imagesToLoad.forEach((img) => {
-            oberver.observe(img);
-        });
-    }
-
-    else {
-        imagesToLoad.forEach((img) => {
-            loadImages(img);
-        });
-    }
-</script>
+<script src="js/lazyloader.js"></script>
 </html>
