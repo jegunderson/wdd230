@@ -39,6 +39,7 @@ let visitdate = Date.now();
 
 localStorage.setItem("lastviewed", visitdate);
 
+
 let lastviewed = localStorage.getItem("lastviewed")
 let days_since_last_view = visitdate - lastviewed
 document.getElementById('lastviewed').textContent = `You last viewed this page ${days_since_last_view} days ago`
