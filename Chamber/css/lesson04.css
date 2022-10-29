@@ -97,6 +97,30 @@ header p{
     background: color url('images/Teton_Chamber_of_Commerce.png');
 } */
 
+.discovercontent {
+    display: flex;
+    flex-direction: column;
+}
+
+ .discovercontent div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.discovercontent p {
+    font-size: 24px;
+    color: #ffeb3b;
+}
+
+.discovercontent img:hover {
+    opacity: .8;
+}
+
+div img{
+    grid-column: 2/3;
+    justify-self: right;
+}
+
 .spotlightdiv div {
     background-color: #666ad1;
     margin: .25em;
@@ -133,6 +157,17 @@ main h2 {
     color: #ffeb3b;
 }
 
+/* main:after {
+    content: 'You visited this site 2 days ago';
+    align-self: center;
+    background-color: #303f9f;
+    margin: auto;
+} */
+
+#lastviewed {
+    background-color: #303f9f;
+    margin: 0;
+}
 footer {
     background-color: #303f9f;
     color: #ffeb3b;
@@ -167,6 +202,7 @@ main {
     margin: auto;
     border: 5px outset black;
 }
+
 
 .herodiv {
     grid-column: 1/-1;
