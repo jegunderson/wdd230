@@ -121,6 +121,9 @@ div img{
     justify-self: right;
 }
 
+#demographics {
+    display: block;
+}
 .spotlightdiv div {
     background-color: #666ad1;
     margin: .25em;
