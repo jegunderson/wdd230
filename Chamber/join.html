@@ -7,7 +7,6 @@
             <meta name="description" content="Teton Idaho Chamber of Commerce Site">
             <title>Teton Idaho Chamber of Commerce - Home Page - WDD 230-03</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-            <!-- <link rel="stylesheet" href="../css/styles.css"> -->
             <link rel="stylesheet" href="css/lesson04.css">
         </head>
         <body id="content">
@@ -27,10 +26,10 @@
                 <nav class="navigation">
                     <button id="hamburgerbtn">&#9776;</button>
                     <ul id="primaryNav">
-                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="discover.html">Discover</a></li>
                         <li><a href="colorScheme.html">Color Scheme</a></li>
-                        <li><a href="join.html">Join</a></li>
+                        <li><a class="active" href="join.html">Join</a></li>
                     </ul>
                 </nav>
 
@@ -38,43 +37,18 @@
                     <p id="datep"> Date </p>
                 </div>
             </header>
-            <main id="home">
-                <div class = "herodiv">
-                    <picture>
-                        <source media="(min-width: 35rem)" srcset="images/Teton_Valley_medium.jpg" />
-                        <source media="(min-width: 64rem)" srcset="images/Teton_Valley_large.jpg" />
-                        <img src="images/Teton_Valley_small.jpg" alt="Teton Valley" />
-                      </picture>
-                    <!-- <img class="herodivpic" src="images/Teton_Valley.jpg" alt="Teton Valley"> -->
+            <main>
+                <form action="thankyou.html" method="GET">
+                    <label>First Name
+                    <input type="text" name="First Name" placeholder="John">
+                    </label>
 
-                </div>
-                <div class = eventdiv>
-                    <h2> Grand Opening</h2>
-                    <p> Come on down to Main street and particapte in the Grand Opening of the newest bakery in town!</p>
-                </div>
-                <div class = weatherdiv>
-                    <h2>Weather</h2>
-                    <p id="temperature"></p>
-                    <p id="windspeed"></p>
-                    <p id="windchill"></p>
+                    <label for="firstname">First Name</label>
+                    <input id="firstname" type="text" placeholder="Bob">
                     
-                </div>
-                <div class = newsdiv>
-                    <h2>News Release</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class = "joindiv"> 
-                    <button>Find an Event</button>
-                    <p> Come and find public events around the community to meet your local business owners!</p>
-                </div>
-                <div class = spotlightdiv>
-                    <div>
-                        <h2>Spotlight 1</h2>
-                    </div>
-                    <div>
-                        <h2>Spotlight 2</h2>
-                    </div>
-                </div>
+                    <input type="submit" value="Sign Me Up!">
+                </form>
+                
             </main>
             <footer>
                 <img class="footerlogo" src="images/Teton_Chamber_of_Commerce.webp" alt="logo"/>
@@ -99,10 +73,9 @@
                     <div>Last Modification <span id="lastupdatedate"></span></div>
                 </div>
             </footer>
-            <!-- <script src="../js/scripts.js"></script> -->
-            <script src="js/lesson04.js"></script>
-            <script src="js/windchill.js"></script>
             
+            <script src="../js/scripts.js"></script>
+            <script src="js/discover.js"></script>
 
         </body>
     </html>
