@@ -1,0 +1,43 @@
+body {
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.25rem;
+}
+
+caption {
+    background-color: gray;
+    color:orangered
+}
+thead {
+    color: orangered;
+}
+
+tfoot {
+    color: orangered;
+}
+table {
+    background-color: black;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    background-color: orangered;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: purple;
+}
+
+td {
+    border: 1px solid black;
+    padding: .3em;
+}
+
+.blackfriday {
+    font-style: italic;
+}
+
+.november {
+    background-color: black;
+    color: orangered;
+}
