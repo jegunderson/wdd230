@@ -214,6 +214,7 @@ textarea{
     background-color: #ffeb3b;
     height: 50px;
     width: 300px;
+    margin: 1em;
 }
 
 label.myinput input:required {
