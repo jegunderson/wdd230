@@ -18,7 +18,6 @@
                         <h2>Chamber of Commerce</h2>
                     </div>
                 
-                
                     <img class= "socialmedia" id="facebook" src="images/facebook.png" alt="facebook"/>
                     <img class= "socialmedia" id="instagram" src="images/instagram.jfif" alt="instagram"/>
 
@@ -37,18 +36,69 @@
                     <p id="datep"> Date </p>
                 </div>
             </header>
-            <main>
-                <form action="thankyou.html" method="GET">
-                    <label>First Name
-                    <input type="text" name="First Name" placeholder="John">
-                    </label>
+            <main id="joinmain">
+                <section>
+                    <div>
+                        <form action="thankyou.html" method="GET">
+                            <label class="myinput">First Name* <input type="text" name="fname" required> </label>                         
+                            <label class="myinput"> Last Name* <input type="text" name="lname" required> </label>
+                            <label class="myinput"></label>Title <input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
+                            <label class="myinput"> Email* <input type="email" name="email" required></label>
+                            <label class="myinput"> Cell Phone* <input type="tel" name="cellphone" required></label>
+                            <label class="myinput"> Business Name* <input type="text" name="bizname" required> </label>
 
-                    <label for="firstname">First Name</label>
-                    <input id="firstname" type="text" placeholder="Bob">
-                    
-                    <input type="submit" value="Sign Me Up!">
-                </form>
-                
+                            <h3>Membership Level</h3>
+                            <label class="myradio"> <input type="radio" name="level" value="nonprofit">Nonprofit</label>
+                            <label class="myradio"> <input type="radio" name="level" value="bronze">Bronze</label>
+                            <label class="myradio"> <input type="radio" name="level" value="silver">Silver</label>
+                            <label class="myradio"> <input type="radio" name="level" value="gold">Gold</label>
+
+                            <label class="businessdescription"> Business Description <textarea name="description" cols="40" rows="5"></textarea></label>
+
+                            <label> <input id="currentdate" type="hidden" name="datetime" value=""></label>
+                            <input class="mysubmit" type="submit" value="Join the Chamber!">
+                        </form>
+                    </div>
+                    <div>
+                        <h2>Membership Levels Benefits</h2>
+
+                        <h3>NP Membership</h3>
+                        
+                        <li>For non profit organizations and there is no fee</li>
+                        
+                        <h3>Bronze Membership</h3>
+                        
+                        <li>15% discount on events</li>
+                        
+                        <li>10% discount on advertising</li>
+                        
+                        <li>Fee of $50/month</li>
+                        
+                        <h3>Silver Membership</h3>
+                        
+                        <li>25% discount on events</li>
+                        
+                        <li>15% discount on advertising</li>
+                        
+                        <li>Free participation in the trade fair</li>
+                        
+                        <li>Fee of $100/month</li>
+                        
+                        <h3>Gold Membership</h3>
+                        
+                        <li>50% discount on events</li>
+                        
+                        <li>50% discount on advertising</li>
+                        
+                        <li>Free participation in the trade fair</li>
+                        
+                        <li>5 free featured ads per year</li>
+                        
+                        <li> free training per quarter</li>
+                        
+                        <li>Fee of $250/month</li>
+                    </div>
+            </section>
             </main>
             <footer>
                 <img class="footerlogo" src="images/Teton_Chamber_of_Commerce.webp" alt="logo"/>

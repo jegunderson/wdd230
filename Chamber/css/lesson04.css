@@ -175,6 +175,51 @@ footer {
     background-color: #303f9f;
     color: #ffeb3b;
 }
+#joinmain {
+    display: block;
+}
+
+label.myinput {
+    display: block;
+    padding-top: 1rem;
+}
+
+label.myinput input label.myinput textarea{
+    display: block;
+    font-size: 2rem;
+    padding: .4rem;
+    width: 20rem;
+    max-width: 20rem;
+}
+
+label.myradio {
+    display: block;
+}
+
+label.myradio input{
+    margin-right: .5rem;
+}
+
+label.businessdescription {
+    display: block;
+    padding: 2rem;
+    justify-content: center;
+}
+textarea{
+    display: block;
+    margin: auto;
+}
+
+.mysubmit {
+    background-color: #ffeb3b;
+    height: 50px;
+    width: 300px;
+}
+
+label.myinput input:required {
+    border: solid 3px ;
+    background-color: #ffeb3b;
+}
 @media screen and (min-width: 35rem){
 nav button {
     display: none;
