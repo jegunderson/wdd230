@@ -221,6 +221,41 @@ label.myinput input:required {
     border: solid 3px ;
     background-color: #ffeb3b;
 }
+
+.directorymain {
+    display: block;
+}
+
+#cardview img {
+    max-width: 15em;
+    margin: .5em;
+}
+
+#cardview div  {
+    /* background-color: white; */
+    margin: 1em;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+#header {
+    text-align: center;
+}
+
+#listtable {
+    margin: auto;
+}
+#listview td {
+    padding: 1em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffeb3b;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #303f9f;
+}
+
 @media screen and (min-width: 35rem){
 nav button {
     display: none;
@@ -285,6 +320,10 @@ main {
     grid-column: 3 / 4;
     grid-row: 4 / 5;
   }
+
+  #cardview {
+    grid-template-columns: 1fr 1fr;
+  }
 }
   
 footer, image {
@@ -292,7 +331,16 @@ footer, image {
     margin-right: auto;
 }
 
+.directorymain {
+    display: block;
+}
+
 @media screen and (min-width: 64rem){
+
+.directorymain {
+    display: block;
+}
+
 main{
     display: grid;
     grid-template-columns: 1fr  3fr  1fr;
@@ -353,4 +401,10 @@ footer {
 .bottomfooter div {
     display: inline;
 }
+
+#cardview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 }

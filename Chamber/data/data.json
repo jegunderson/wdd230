@@ -1,7 +1,7 @@
 {
     "businesses" : [
         {
-            "imageURL" : "./images/animals.jpg",
+            "imageURL" : "./images/generic_logo.jpg",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
@@ -9,7 +9,7 @@
             "businessname" : "My business"
         },
         {
-            "imageURL" : "./images/animals.jpg",
+            "imageURL" : "./images/generic_logo.jpg",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
@@ -17,7 +17,7 @@
             "businessname" : "My business"
         },
         {
-            "imageURL" : "./images/animals.jpg",
+            "imageURL" : "./images/generic_logo.jpg",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
@@ -25,7 +25,7 @@
             "businessname" : "My business"
         },
         {
-            "imageURL" : "./images/animals.jpg",
+            "imageURL" : "./images/generic_logo.jpg",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
@@ -33,7 +33,63 @@
             "businessname" : "My business"
         },
         {
-            "imageURL" : "./images/animals.jpg",
+            "imageURL" : "./images/generic_logo.jpg",
+            "street" : "123 Main Street",
+            "citystatezip" : "34567",
+            "phone" : "(123) 456-7890",
+            "websiteURL" : "hello.com",
+            "businessname" : "My business"
+        },
+        {
+            "imageURL" : "./images/generic_logo.jpg",
+            "street" : "123 Main Street",
+            "citystatezip" : "34567",
+            "phone" : "(123) 456-7890",
+            "websiteURL" : "hello.com",
+            "businessname" : "My business"
+        },
+        {
+            "imageURL" : "./images/generic_logo.jpg",
+            "street" : "123 Main Street",
+            "citystatezip" : "34567",
+            "phone" : "(123) 456-7890",
+            "websiteURL" : "hello.com",
+            "businessname" : "My business"
+        },
+        {
+            "imageURL" : "./images/generic_logo.jpg",
+            "street" : "123 Main Street",
+            "citystatezip" : "34567",
+            "phone" : "(123) 456-7890",
+            "websiteURL" : "hello.com",
+            "businessname" : "My business"
+        },
+        {
+            "imageURL" : "./images/generic_logo.jpg",
+            "street" : "123 Main Street",
+            "citystatezip" : "34567",
+            "phone" : "(123) 456-7890",
+            "websiteURL" : "hello.com",
+            "businessname" : "My business"
+        },
+        {
+            "imageURL" : "./images/generic_logo.jpg",
+            "street" : "123 Main Street",
+            "citystatezip" : "34567",
+            "phone" : "(123) 456-7890",
+            "websiteURL" : "hello.com",
+            "businessname" : "My business"
+        },
+        {
+            "imageURL" : "./images/generic_logo.jpg",
+            "street" : "123 Main Street",
+            "citystatezip" : "34567",
+            "phone" : "(123) 456-7890",
+            "websiteURL" : "hello.com",
+            "businessname" : "My business"
+        },
+        {
+            "imageURL" : "./images/generic_logo.jpg",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",

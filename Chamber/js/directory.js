@@ -27,6 +27,7 @@ function displayCards(card)
 function displayList(item)
 {
     let listview = document.querySelector('#listview');
+    let listtable = document.querySelector('#listtable');
     let row = document.createElement('tr');
     row.innerHTML = `
     <tr>
@@ -36,7 +37,8 @@ function displayList(item)
         <td>${item.wesbiteurl}</td>
     </tr>
     `
-    listview.appendChild(row);
+    listview.appendChild(listtable);
+    listtable.appendChild(row);
 }
 
 let cardselector = document.querySelector("#cardselect");
