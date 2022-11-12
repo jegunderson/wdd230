@@ -18,7 +18,7 @@ function displayCards(card)
     let cardelt = document.createElement("div");
     cardelt.innerHTML = `
         <img src="${card.imageURL}" alt="logo">
-        <p> ${card.address} ${card.citystatezip}</p>
+        <p> ${card.street} ${card.citystatezip}</p>
         <p>${card.phone}</p>
         <p><a href="${card.websiteURL}">${card.websiteURL}</a></p>
         `;
@@ -32,9 +32,9 @@ function displayList(item)
     row.innerHTML = `
     <tr>
         <td>${item.businessname}</td>
-        <td>${item.address} ${item.citystatezip}</td>
+        <td>${item.street} ${item.citystatezip}</td>
         <td>${item.phone}}</td>
-        <td>${item.wesbiteurl}</td>
+        <td>${item.websiteURL}</td>
     </tr>
     `
     listview.appendChild(listtable);
