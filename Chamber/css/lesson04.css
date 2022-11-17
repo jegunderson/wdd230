@@ -139,7 +139,7 @@ div img{
 .herodiv button {
     position: relative;
     top: 20px;
-    right: 20px;
+    left: 20px;
 }
 
 button {
@@ -192,6 +192,7 @@ footer {
 label.myinput {
     display: block;
     padding-top: 1rem;
+    padding: 1em;
 }
 
 label.myinput input label.myinput textarea{
@@ -213,12 +214,12 @@ label.myradio input{
 
 label.businessdescription {
     display: block;
-    padding: 2rem;
+    padding: 1rem;
     justify-content: center;
 }
 textarea{
     display: block;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .mysubmit {
@@ -266,6 +267,10 @@ table tr:nth-child(even) {
 
 table tr:nth-child(odd) {
     background-color: #303f9f;
+}
+
+.joingrid {
+    display: block;
 }
 
 @media screen and (min-width: 35rem){
@@ -347,6 +352,7 @@ footer, image {
     display: block;
 }
 
+
 @media screen and (min-width: 64rem){
 
 .directorymain {
@@ -417,6 +423,11 @@ footer {
 #cardview {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.joingrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 }
