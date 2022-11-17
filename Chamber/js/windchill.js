@@ -1,4 +1,4 @@
-function setWindChill(temp, windspeed){
+function showWeather(temp, windspeed){
     temp = 44;
     windspeed = 10;
 
@@ -6,6 +6,9 @@ function setWindChill(temp, windspeed){
     let tempobj = document.querySelector("#temperature");
     let windspeedobj = document.querySelector("#windspeed");
     let windchillobj = document.querySelector("#windchill");
+    let weathericon = document.querySelector("#weathericon");
+    let weatherdesc = document.querySelector("weatherdesc");
+
 
     let windchillmsg = "N/A";
 
@@ -21,4 +24,4 @@ function setWindChill(temp, windspeed){
     windchillobj.innerHTML = `Windchill: ${windchillmsg}`;
     
 }
-setWindChill(49, 10);
+showWeather(49, 10);

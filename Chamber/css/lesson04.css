@@ -256,6 +256,10 @@ label.myinput input:required {
     border: 2px solid black;
 }
 
+#listview {
+    display: none;
+}
+
 table tr:nth-child(even) {
     background-color: #ffeb3b;
 }
