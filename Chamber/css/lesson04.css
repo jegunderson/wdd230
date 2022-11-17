@@ -273,6 +273,17 @@ table tr:nth-child(odd) {
     display: block;
 }
 
+#thankyoumain {
+    /* align-content: center; */
+    display: block;
+    text-align: center;
+    color: #ffeb3b;
+    background-color: #303f9f;
+    margin: 1em auto;
+    font-weight: bolder;
+    font-size: large;
+}
+
 @media screen and (min-width: 35rem){
 nav button {
     display: none;
