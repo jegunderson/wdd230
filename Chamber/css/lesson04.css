@@ -133,6 +133,14 @@ div img{
     width: 100%;
     height: 100%;
   }
+.herodiv {
+    position: relative;
+}
+.herodiv button {
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
 
 button {
     border-radius: 12px;
@@ -148,10 +156,12 @@ button {
     margin: 1em;
 }
 
-
+input {
+    display: block;
+}
 main div{
     margin: 2px;
-    text-align: center;
+    /* text-align: center; */
     background-color: #303f9f;
     font-weight: bold;
     color: white;
@@ -194,6 +204,7 @@ label.myinput input label.myinput textarea{
 
 label.myradio {
     display: block;
+    margin: 1em;
 }
 
 label.myradio input{
