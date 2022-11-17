@@ -39,7 +39,7 @@ let visitdate = Date.now();
 
 localStorage.setItem("lastviewed", visitdate);
 
-localStorage.setItem("lastviewed", 1668613267528);
+// localStorage.setItem("lastviewed", 1668613267528);
 
 let lastviewed = localStorage.getItem("lastviewed");
 let days_since_last_view = (visitdate - lastviewed) / 86400000;
