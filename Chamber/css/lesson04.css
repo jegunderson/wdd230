@@ -102,11 +102,6 @@ header p{
     flex-direction: column;
 }
 
- .discovercontent div {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
 .discovercontent p {
     font-size: 24px;
     color: #ffeb3b;
@@ -441,4 +436,8 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 
+.discovercontent div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 }
