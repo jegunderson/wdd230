@@ -129,10 +129,11 @@ div img{
     height: 100%;
   }
 .herodiv {
+    /* position: absolute; */
     position: relative;
 }
 .herodiv button {
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 20px;
 }

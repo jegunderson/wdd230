@@ -41,13 +41,13 @@
             <main id="home">
                 <div class = "herodiv">
                     <picture>
-                        <source media="(min-width: 35rem)" srcset="images/Teton_Valley_medium.jpg" />
+                        <source media="(min-width: 35rem) and (max-wdith: 64rem)" srcset="images/Teton_Valley_medium.jpg" />
                         <source media="(min-width: 64rem)" srcset="images/Teton_Valley_large.jpg" />
                         <img src="images/Teton_Valley_small.jpg" alt="Teton Valley" />
                     </picture>
                     <!-- <img class="herodivpic" src="images/Teton_Valley.jpg" alt="Teton Valley"> -->
 
-                    <button><a href="join.html"></a>Join the Chamber!</button>
+                    <button><a href="join.html">Join the Chamber!</a></button>
 
                 </div>
                 <div class = eventdiv>
@@ -56,7 +56,13 @@
                 </div>
                 <div class = weatherdiv>
                     <h2>Weather</h2>
+                    <figure>
+                        <img src="images/placeholder.png" alt="" id="weathericon">
+                        <figcaption></figcaption>
+                    </figure>
                     <p id="temperature"></p>
+                    <p id="weatherdesc"></p>
+                    <hr>
                     <p id="windspeed"></p>
                     <p id="windchill"></p>
                     
