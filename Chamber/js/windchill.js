@@ -25,9 +25,8 @@
     
 // }
 
-
-const LAT = "64.8378";
-const LON = "-147.7164";
+const LAT = "43.9166";
+const LON = "-111.3761";
 const APIkey = "068ee80986bbbc345261eb9e23b3ef5d";
 
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&appid=${APIkey}&units=imperial`;
@@ -44,7 +43,7 @@ function showWeather(obj){
     
     let weatherdesc = document.querySelector("weatherdesc");
 
-    temperature.textContent = obj.main.temp;
+    temperature.textContent = `${obj.main.temp.toFixed(0)}\u00B0F`;
     // iconpath.textContent = iconURL;
     weathericon.setAttribute("alt", obj.weather[0].description);
     weathericon.setAttribute("src", iconURL);
