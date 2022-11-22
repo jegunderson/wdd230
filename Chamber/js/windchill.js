@@ -43,13 +43,22 @@ function showWeather(obj){
     
     let weatherdesc = document.querySelector("weatherdesc");
 
-    temperature.textContent = `${obj.main.temp.toFixed(0)}\u00B0F`;
+    let chill = "NA";
+    let temp = obj.main.temp.toFixed(0);
+    let windspeed = Math.floor(obj.wind.speed);
+
+    if (temp <= 50 && windspeed > 3){
+
+        chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
+    }
+
+    temperature.textContent = `${temp}\u00B0F`;
     // iconpath.textContent = iconURL;
     weathericon.setAttribute("alt", obj.weather[0].description);
     weathericon.setAttribute("src", iconURL);
     figcaption.textContent = obj.weather[0].main;
-    windspeedobj.textContent = `Wind Speed: ${obj.wind.speed}`;
-    windchillobj.textContent = `Wind Chill: ${obj.wind.deg}`;
+    windspeedobj.textContent = `Wind Speed: ${windspeed} mph`;
+    windchillobj.textContent = `Wind Chill: ${chill}`;
 
 
     // let windchillmsg = "N/A";

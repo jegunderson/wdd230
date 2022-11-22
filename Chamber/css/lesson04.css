@@ -2,6 +2,9 @@
     border: 1px black solid;
 } */
 
+#home div {
+    padding: .5em;
+}
 .pageheader {
     display:inline-block;
 }
@@ -284,6 +287,14 @@ table tr:nth-child(odd) {
     font-size: large;
 }
 
+.weatherdiv figure img {
+    margin: auto;
+  }
+
+.bottomfooter {
+    margin: auto;
+}
+
 @media screen and (min-width: 35rem){
 nav button {
     display: none;
@@ -348,6 +359,7 @@ main {
     grid-column: 3 / 4;
     grid-row: 4 / 5;
   }
+  
 
   #cardview {
     grid-template-columns: 1fr 1fr;
