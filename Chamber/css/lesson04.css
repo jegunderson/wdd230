@@ -23,6 +23,10 @@ nav ul {
     display: none;
 }
 
+.pageheader{
+    margin-left: 1em;
+}
+
 /* .pageheader {
     float: inline-end;
 } */
@@ -125,6 +129,18 @@ div img{
 .spotlightdiv div {
     background-color: #666ad1;
     margin: .25em;
+    margin-top: 5em;
+}
+
+#membershipdesc {
+    padding: .5em;
+}
+#membershipdesc h2{
+    margin-left: 1em;
+}
+
+#membershipdesc h3{
+    margin-left: .5em;
 }
 
 .herodiv img {
@@ -309,6 +325,10 @@ table tr:nth-child(odd) {
 
 footer{
     text-align: center;
+}
+
+footer p {
+    font-size: 1.25em;
 }
 
 @media screen and (min-width: 35rem){
