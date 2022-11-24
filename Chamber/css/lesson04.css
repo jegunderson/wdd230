@@ -160,10 +160,14 @@ input {
 }
 main div{
     margin: 2px;
-    /* text-align: center; */
+    text-align: center;
     background-color: #303f9f;
     font-weight: bold;
     color: white;
+}
+
+#joinmain div{
+    text-align: left;
 }
 main h2 {
     color: #ffeb3b;
