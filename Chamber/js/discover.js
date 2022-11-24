@@ -37,10 +37,11 @@ else {
 
 let visitdate = Date.now();
 
-localStorage.setItem("lastviewed", visitdate);
 
 // localStorage.setItem("lastviewed", 1668613267528);
 
 let lastviewed = localStorage.getItem("lastviewed");
 let days_since_last_view = (visitdate - lastviewed) / 86400000;
 document.getElementById('lastviewed').textContent = `You last viewed this page ${days_since_last_view.toFixed(0)} days ago`;
+
+localStorage.setItem("lastviewed", visitdate);

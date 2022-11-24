@@ -1,100 +1,99 @@
 {
     "businesses" : [
         {
-            "imageURL" : "./images/generic_logo.jpg",
+            "imageURL" : "./images/safeway.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "safeway.com",
+            "businessname" : "Safeway"
         },
         {
-            "imageURL" : "./images/generic_logo.jpg",
+            "imageURL" : "./images/arbys.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "arbys.com",
+            "businessname" : "Arbys"
         },
         {
-            "imageURL" : "./images/generic_logo.jpg",
+            "imageURL" : "./images/broulims.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "broulims.com",
+            "businessname" : "Broulims"
         },
         {
-            "imageURL" : "./images/generic_logo.jpg",
+            "imageURL" : "./images/deseret_industries.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "Deseretindustries.com",
+            "businessname" : "Deseret Industries"
         },
         {
-            "imageURL" : "./images/generic_logo.jpg",
-            "street" : "123 Main Street",
+            "imageURL" : "./images/jakers.png",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "jakers.com",
+            "businessname" : "Jakers"
         },
         {
-            "imageURL" : "./images/generic_logo.jpg",
+            "imageURL" : "./images/kiwi_loco.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "kiwiloco.com",
+            "businessname" : "Kiwi Loco"
         },
         {
-            "imageURL" : "./images/generic_logo.jpg",
+            "imageURL" : "./images/McDonald's_logo.svg.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "mcdonalds.com",
+            "businessname" : "McDonalds"
         },
         {
-            "imageURL" : "./images/generic_logo.jpg",
+            "imageURL" : "./images/reds_grill.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "redsgrill.com",
+            "businessname" : "Reds Grill"
         },
         {
-            "imageURL" : "./images/generic_logo.jpg",
+            "imageURL" : "./images/sandpiper.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "sandpiper.com",
+            "businessname" : "Sandpiper Restaurant"
         },
         {
-            "imageURL" : "./images/generic_logo.jpg",
+            "imageURL" : "./images/taco_bell.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "tacobell.com",
+            "businessname" : "Taco Bell"
         },
         {
-            "imageURL" : "./images/generic_logo.jpg",
+            "imageURL" : "./images/walmart.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "walmart.com",
+            "businessname" : "Walmart"
         },
         {
-            "imageURL" : "./images/generic_logo.jpg",
+            "imageURL" : "./images/wendys.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
-            "websiteURL" : "hello.com",
-            "businessname" : "My business"
+            "websiteURL" : "wendys.com",
+            "businessname" : "Wendys"
         }
         
     ]

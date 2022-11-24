@@ -43,7 +43,7 @@ function showWeather(obj){
     
     let weatherdesc = document.querySelector("weatherdesc");
 
-    let chill = "NA";
+    let chill = "N/A";
     let temp = obj.main.temp.toFixed(0);
     let windspeed = Math.floor(obj.wind.speed);
 

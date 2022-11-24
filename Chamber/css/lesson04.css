@@ -11,8 +11,8 @@
 
 nav{
     position: absolute;
-    top: 40px;
-    right: 5px;
+    top: 3.5em;
+    right: 1em;
 }
 
 
@@ -77,12 +77,12 @@ header:first-child {
     position: absolute;
 }
 #facebook{
-    top: 40px;
-    right: 3em;
+    top: 1em;
+    right: 4em;
 }
 #instagram {
-    top: 40px;
-    right: 7em;
+    top: 1em;
+    right: 1em;
 }
 
 .datediv{
@@ -175,6 +175,14 @@ main h2 {
     background-color: #303f9f;
     margin: auto;
 } */
+
+#cardview a {
+    color: #ADD8E6;
+}
+
+#cardview div {
+    text-align: center;
+}
 
 #lastviewed {
     background-color: #303f9f;
@@ -293,6 +301,10 @@ table tr:nth-child(odd) {
 
 .bottomfooter {
     margin: auto;
+}
+
+footer{
+    text-align: center;
 }
 
 @media screen and (min-width: 35rem){
@@ -422,14 +434,14 @@ nav ul li a {
 grid-row: 1/1;
 grid-column: 1/1;
   }
-  #facebook{
+  /* #facebook{
     top: 40px;
     right: 500px;
-}
-#instagram {
+} */
+/* #instagram {
     top: 40px;
     right: 560px;
-}
+} */
 footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
