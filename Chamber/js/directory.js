@@ -33,7 +33,7 @@ function displayList(item)
     <tr>
         <td>${item.businessname}</td>
         <td>${item.street} ${item.citystatezip}</td>
-        <td>${item.phone}}</td>
+        <td>${item.phone}</td>
         <td>${item.websiteURL}</td>
     </tr>
     `

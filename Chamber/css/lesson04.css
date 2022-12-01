@@ -1,7 +1,13 @@
 /* div {
     border: 1px black solid;
 } */
+#content {
+    font-family: "Lato", sans-serif;   
+}
 
+h1 h2 h3 h4 {
+    font-family: "Roboto Slab", serif;
+}
 #home div {
     padding: .5em;
 }
@@ -93,7 +99,7 @@ header:first-child {
     background-color: #666ad1;
     grid-column: 1/-1;
     color:black;
-    font-size: 3em;
+    font-size: 1.5em;
     border: 3px solid black;
 }
 header p{
@@ -136,7 +142,8 @@ div img{
     padding: .5em;
 }
 #membershipdesc h2{
-    margin-left: 1em;
+    margin: auto;
+
 }
 
 #membershipdesc h3{
@@ -239,6 +246,10 @@ label.myradio input{
     margin-right: .5rem;
 }
 
+.myradio input {
+    display: inline;
+}
+
 label.businessdescription {
     display: block;
     padding: 1rem;
@@ -314,7 +325,24 @@ table tr:nth-child(odd) {
     font-weight: bolder;
     font-size: large;
 }
+#contactmain {
+    display: block;
+}
+#contactmain label {
+    text-align: left;
+}
 
+#contactmain h2 {
+    margin: 0%;
+}
+#contactmain p {
+    margin: 0%;
+}
+
+#message {
+    width: 80%;
+    height: 5em;
+}
 .weatherdiv figure img {
     margin: auto;
   }
@@ -398,6 +426,7 @@ main {
   
 
   #cardview {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
