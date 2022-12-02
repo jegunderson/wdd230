@@ -538,6 +538,11 @@ footer {
 
 #contactgrid {
     display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#boardofdirectors {
+    display: grid;
     grid-template-columns: 1fr 1fr;
 }
 }
