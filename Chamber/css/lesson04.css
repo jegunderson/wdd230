@@ -344,6 +344,10 @@ table tr:nth-child(odd) {
     margin: 0%;
 }
 
+#boardofdirectors img{
+    padding: .5em;
+}
+
 #message {
     width: 80%;
     height: 5em;
@@ -530,5 +534,10 @@ footer {
 .discovercontent div {
     display: grid;
     grid-template-columns: 2fr 1fr;
+}
+
+#contactgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 }
