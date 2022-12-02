@@ -2,7 +2,7 @@
     "businesses" : [
         {
             "imageURL" : "./images/safeway.png",
-            "street" : "123 Main Street",
+            "street" : "803 W Winchester",
             "citystatezip" : "34567",
             "phone" : "(123) 456-7890",
             "websiteURL" : "safeway.com",
@@ -10,80 +10,81 @@
         },
         {
             "imageURL" : "./images/arbys.png",
-            "street" : "123 Main Street",
+            "street" : "745 N 25th St",
             "citystatezip" : "34567",
-            "phone" : "(123) 456-7890",
+            "phone" : "(123) 536-7384",
             "websiteURL" : "arbys.com",
             "businessname" : "Arbys"
         },
         {
             "imageURL" : "./images/broulims.png",
-            "street" : "123 Main Street",
+            "street" : "702 N Yale",
             "citystatezip" : "34567",
-            "phone" : "(123) 456-7890",
+            "phone" : "(123) 937-3728",
             "websiteURL" : "broulims.com",
             "businessname" : "Broulims"
         },
         {
             "imageURL" : "./images/deseret_industries.png",
-            "street" : "123 Main Street",
+            "street" : "926 Main Street",
             "citystatezip" : "34567",
-            "phone" : "(123) 456-7890",
+            "phone" : "(123) 836-7256",
             "websiteURL" : "Deseretindustries.com",
             "businessname" : "Deseret Industries"
         },
         {
             "imageURL" : "./images/jakers.png",
+            "street" : "352 Beach Rd",
             "citystatezip" : "34567",
-            "phone" : "(123) 456-7890",
+            "phone" : "(123) 283-3742",
             "websiteURL" : "jakers.com",
             "businessname" : "Jakers"
         },
         {
             "imageURL" : "./images/kiwi_loco.png",
-            "street" : "123 Main Street",
+            "street" : "123 2nd place",
             "citystatezip" : "34567",
-            "phone" : "(123) 456-7890",
+            "phone" : "(123) 285-2748",
             "websiteURL" : "kiwiloco.com",
             "businessname" : "Kiwi Loco"
         },
         {
             "imageURL" : "./images/McDonald's_logo.svg.png",
-            "street" : "123 Main Street",
+            "street" : "235 1st Avenue",
             "citystatezip" : "34567",
-            "phone" : "(123) 456-7890",
+            "phone" : "(123) 274-2793",
             "websiteURL" : "mcdonalds.com",
             "businessname" : "McDonalds"
         },
         {
             "imageURL" : "./images/reds_grill.png",
-            "street" : "123 Main Street",
+            "street" : "926 Main Street",
             "citystatezip" : "34567",
-            "phone" : "(123) 456-7890",
+            "phone" : "(123) 429-4826",
             "websiteURL" : "redsgrill.com",
             "businessname" : "Reds Grill"
         },
         {
             "imageURL" : "./images/sandpiper.png",
-            "street" : "123 Main Street",
+            "street" : "824 Main Street",
             "citystatezip" : "34567",
-            "phone" : "(123) 456-7890",
+            "phone" : "(123) 423-5824",
             "websiteURL" : "sandpiper.com",
             "businessname" : "Sandpiper Restaurant"
         },
         {
             "imageURL" : "./images/taco_bell.png",
-            "street" : "123 Main Street",
+            "street" : "352 Main Street",
             "citystatezip" : "34567",
-            "phone" : "(123) 456-7890",
+            "phone" : "(123) 425-3724",
             "websiteURL" : "tacobell.com",
             "businessname" : "Taco Bell"
         },
         {
             "imageURL" : "./images/walmart.png",
-            "street" : "123 Main Street",
+            "street" : "526 Main Street",
             "citystatezip" : "34567",
-            "phone" : "(123) 456-7890",
+            "phone" : "(123) 445-2582",
             "websiteURL" : "walmart.com",
             "businessname" : "Walmart"
         },
@@ -91,7 +92,7 @@
             "imageURL" : "./images/wendys.png",
             "street" : "123 Main Street",
             "citystatezip" : "34567",
-            "phone" : "(123) 456-7890",
+            "phone" : "(123) 214-3826",
             "websiteURL" : "wendys.com",
             "businessname" : "Wendys"
         }
