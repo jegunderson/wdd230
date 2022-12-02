@@ -12,7 +12,7 @@ function togglemenu() {
 const x = document.getElementById('hamburgerbtn')
 x.onclick = togglemenu;
 
-
+// date at top
 var today = new Date();
 document.querySelector("footer div span").textContent = today.getFullYear();
 
@@ -24,11 +24,14 @@ let month = months[today.getMonth()]
 
 document.getElementById("datep").textContent = `${day}, ${today.getDate()} ${month} ${today.getFullYear()}`;
 
+// last modified
 const lastmodified = new Date(document.lastModified);
 document.getElementById("lastupdatedate").textContent = `${lastmodified.getDate()}/${lastmodified.getMonth()+1}/${lastmodified.getFullYear()} ${lastmodified.getHours()}:${lastmodified.getMinutes()}:${lastmodified.getSeconds()}`;
 
-if (today.getDay() == 4){
-    document.querySelector("header P").getElementsByClassName.display='block';
+// Monday Tuesday banner
+if (today.getDay() == 1 || today.getDay() == 2){
+    document.querySelector("header p").textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 }
+
 
 

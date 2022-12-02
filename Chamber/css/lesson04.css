@@ -138,6 +138,10 @@ div img{
     margin-top: 5em;
 }
 
+#optionalspotlight {
+    display: none;
+  }
+
 #membershipdesc {
     padding: .5em;
 }
@@ -472,6 +476,10 @@ nav ul li a {
     grid-template-columns: 1fr;
     grid-row: 1 / 4;
     grid-column: 3 / 4;
+  }
+
+  #optionalspotlight {
+    display: block;
   }
 
   .newsdiv {
