@@ -1,0 +1,109 @@
+.content {
+    font-size: large;
+    background-color: #b4b269;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: #80316A;
+}
+
+header h1 {
+    margin: auto;
+    color: #E3B445;
+    font-weight: bolder;
+    font-family: "Merriweather", serif;
+}
+.logo {
+    height: 100%;
+}
+
+nav a {
+    color: #E3B445;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-left: 2vw; */
+}
+
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,1);
+    border-left: 1px solid rgba(0,0,0,1);
+    padding: .5em;
+}
+
+#homebanner img {
+    width: 100%;
+    height: 100%;
+    /* padding: 1em; */
+}
+
+#homebanner {
+    position: relative;
+}
+#homebanner button {
+    background-color: #E3B445;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#overview {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#overview p {
+    padding: 1em;
+}
+
+h2 {
+    color: #E3B445;
+    background-color: #80316A;
+    font-weight: bolder;
+    font-family: "Merriweather", serif;
+}
+
+h3 {
+    color: #E3B445;
+    background-color: #80316A;
+    font-weight: bolder;
+    font-family: "Merriweather", serif;
+}
+div {
+    background-color: #F9F9FA;
+    /* margin: 1em; */
+}
+#color_scheme p {
+    border: 1px solid black;
+}
+p {
+    margin: auto;
+    color: #80316A;
+    /* font-weight: bold; */
+    font-family: "Raleway", sans-serif;
+}
+#a {
+    background-color: #E3B445;
+}
+#b {
+    background-color: #F9F9FA;
+}
+#c {
+    background-color: #80316A;
+}
+#d {
+    background-color: #A9A4A4;
+}
+#e {
+    background-color: #b4b269;
+}
