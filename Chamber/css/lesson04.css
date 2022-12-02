@@ -340,6 +340,7 @@ table tr:nth-child(odd) {
     margin: 0%;
 }
 #contactmain p {
+    padding: .5em;
     margin: 0%;
 }
 
