@@ -57,14 +57,13 @@ nav ul li a {
     font-size: 1.5em;
 }
 
-#overview {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+#overview img {
+    width: 90%;
+    margin: .5em;
+    padding: .3em;
+    border: #E3B445 5px solid;
 }
 
-#overview p {
-    padding: 1em;
-}
 
 h2 {
     color: #E3B445;
@@ -87,6 +86,7 @@ div {
     border: 1px solid black;
 }
 p {
+    padding: 1em;
     margin: auto;
     color: #80316A;
     /* font-weight: bold; */
@@ -106,4 +106,30 @@ p {
 }
 #e {
     background-color: #b4b269;
+}
+
+/* make this for screen view */
+@media screen and (min-width: 64rem){
+#homemain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#homebanner {
+    grid-column: 1 / -1;
+}
+
+#overview {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#overview img {
+    width: auto;
+}
+
+#overview p {
+    padding: 1em;
+}
 }
