@@ -14,7 +14,8 @@
         <a href="index.html"><img class="logo" src="images/logo_100.png" alt="Temple Inn & Suites logo"></a>
         <h1>Temple Inn & Suites</h1>
         <nav>
-            <ul>
+            <button id="hamburgerbtn">&#9776;</button>
+            <ul id="primaryNav">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="temples.html">Temples</a></li>
                 <li><a href="reservation.html">Reservations</a></li>
@@ -25,10 +26,13 @@
     <main id="homemain">
         <div id="homebanner">
             <img src="images/gilber_temple_crop.jpg">
-            <button> <a href="reservation.html">Book Now!</a></button>
+            <button> <a href="reservation.html">Find and book a temple suite!</a></button>
         </div>
         <div id="overview">
-            <p>Welcome to Temple Inn & Suites! Here we cater to all of your righteous desires. You can easily book a reservation for your stay anytime until to the Second Coming. We have so many amentities that are available just for you! Feel free to stop in at any Temple Inn & Suites hotel near you or continue navigating this site for more information. You can also contact us at 1(800) 243-7456!</p>
+            <div>
+                <p>Welcome to Temple Inn & Suites! Here we cater to all of your righteous desires. You can easily book a reservation for your stay anytime until to the Second Coming.</p>
+                <p>We have so many amentities that are available just for you! Feel free to stop in at any Temple Inn & Suites hotel near you or continue navigating this site for more information. You can also contact us at 1(800) 243-7456!</p>
+            </div>
             <img src="images/overview_temple_resize.jpg" alt="fancy hotel">
         </div>
         <div class="mesatemple">
@@ -38,22 +42,39 @@
             <p>Services</p>
             <p> Upcoming Closures</p>
         </div>
-        <div class="weather">
-            <h2>Weather</h2>
-        </div>
         <div>
-            <h2>Our Amentities</h2>
-            <a href="services.html">Some Amentities</a>
+            <div class="weather">
+                <h2>Weather</h2>
+                <img id="weathericon" src="" alt="">
+                <p id="temperature"></p>
+                <p id="windspeed"></p>
+                <p id="windchill"></p>
+                <figcaption></figcaption>
+                
+            </div>
+            <div class="amentities">
+                <h2><a href="services.html">Our Amentities</a></h2>
+                <ul>
+                    <li>Spa</li>
+                    <li>24 hour gym</li>
+                    <li>Child care</li>
+                </ul>
 
+            </div>
         </div>
     </main>
     <footer>
-        <img src="logo" alt="Temple Inn & Suites logo">
-        <p id="last_modified">last modified:</p>
-        <a href="resources.html">resources</a>
-        <a href="https://facebook.com"><img src="facebook" alt="facebook logo"></a>
-        <a href="https://instagram.com"><img src="instagram" alt="instagram logo"></a>
+        <img src="images/logo_100.png" alt="Temple Inn & Suites logo">
+        <div>
+            <p id="last_modified">last modified:</p>
+            <a href="resources.html">resources</a>
+        </div>
+        <div>
+            <a href="https://facebook.com"><img src="facebook" alt="facebook logo"></a>
+            <a href="https://instagram.com"><img src="instagram" alt="instagram logo"></a>
+        </div>
     </footer>
-
+    <script src="js/weather.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

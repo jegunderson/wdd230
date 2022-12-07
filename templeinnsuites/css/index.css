@@ -1,14 +1,17 @@
-.content {
+/* .content {
+    text-align: center;
     font-size: large;
     background-color: #b4b269;
-    width: 80%;
     margin: auto;
+} */
+main div{
+    background-color: #b4b269;
 }
-
 header {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     background-color: #80316A;
+    text-align: center;
 }
 
 header h1 {
@@ -39,6 +42,28 @@ nav ul li a {
     padding: .5em;
 }
 
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+nav{
+    position: absolute;
+    top: .5em;
+    right: 1em;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
 #homebanner img {
     width: 100%;
     height: 100%;
@@ -51,8 +76,8 @@ nav ul li a {
 #homebanner button {
     background-color: #E3B445;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 1em;
+    left: .5em;
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -64,6 +89,29 @@ nav ul li a {
     border: #E3B445 5px solid;
 }
 
+#overview p {
+    padding: auto;
+    justify-self: center;
+}
+
+.mesatemple {
+    text-align: center;
+    /* border: #80316A solid;
+    border-width: 10px; */
+    /* margin: 1em; */
+
+}
+
+.weather {
+    text-align: center;
+}
+
+.amentities {
+    text-align: center;
+}
+h2 a {
+    color: #E3B445;
+}
 
 h2 {
     color: #E3B445;
@@ -78,20 +126,34 @@ h3 {
     font-weight: bolder;
     font-family: "Merriweather", serif;
 }
-div {
-    background-color: #F9F9FA;
-    /* margin: 1em; */
-}
+
 #color_scheme p {
     border: 1px solid black;
 }
 p {
-    padding: 1em;
+    /* padding: 1em; */
     margin: auto;
     color: #80316A;
     /* font-weight: bold; */
     font-family: "Raleway", sans-serif;
+    text-align: center;
 }
+
+footer {
+    background-color: #80316A;
+}
+footer div{
+    background-color: #80316A;
+}
+
+footer img {
+    margin: 1em;
+}
+
+footer p {
+    color: #E3B445;
+}
+
 #a {
     background-color: #E3B445;
 }
@@ -110,6 +172,31 @@ p {
 
 /* make this for screen view */
 @media screen and (min-width: 64rem){
+
+.content {
+    font-size: large;
+    background-color: #b4b269;
+    width: 80%;
+    margin: auto;
+}
+
+nav{
+    position: absolute;
+    top: 1em;
+    right: 10em;
+}
+
+nav button {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-left: 2vw; */
+}
+
 #homemain {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -131,5 +218,15 @@ p {
 
 #overview p {
     padding: 1em;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+main div {
+    background-color: #F9F9FA;
+    /* margin: 1em; */
 }
 }
