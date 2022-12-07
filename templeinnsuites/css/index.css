@@ -24,6 +24,10 @@ header h1 {
     height: 100%;
 }
 
+.active {
+    background-color: #E3B445;
+    color: #80316A;
+}
 nav a {
     color: #E3B445;
 }
@@ -31,8 +35,7 @@ nav a {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
-    /* margin-left: 2vw; */
+    justify-content: flex-end
 }
 
 nav ul li a {
@@ -40,10 +43,6 @@ nav ul li a {
     border-right: 1px solid rgba(0,0,0,1);
     border-left: 1px solid rgba(0,0,0,1);
     padding: .5em;
-}
-
-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.171);
 }
 
 nav{
@@ -96,19 +95,37 @@ nav ul.open {
 
 .mesatemple {
     text-align: center;
-    /* border: #80316A solid;
-    border-width: 10px; */
-    /* margin: 1em; */
+    border: #E3B445 solid;
+    border-width: 10px;
+    margin: 1em;
 
+}
+
+.mesatemple p {
+    margin: .7em;
 }
 
 .weather {
     text-align: center;
 }
 
+.weather p {
+    margin: .7em;
+}
+
 .amentities {
     text-align: center;
 }
+
+.mesatemple ul {
+    list-style-type: none;
+}
+
+.amentities p {
+    list-style-type: none;
+    margin: .7em;
+}
+
 h2 a {
     color: #E3B445;
 }
@@ -141,6 +158,7 @@ p {
 
 footer {
     background-color: #80316A;
+    text-align: center;
 }
 footer div{
     background-color: #80316A;
@@ -152,6 +170,14 @@ footer img {
 
 footer p {
     color: #E3B445;
+}
+
+#centerfooter a {
+    color: #E3B445;
+}
+
+a:hover {
+    opacity: .5;
 }
 
 #a {
@@ -169,64 +195,106 @@ footer p {
 #e {
     background-color: #b4b269;
 }
+@media screen and (min-width: 40rem){
+    main div {
+        background-color: #F9F9FA;
+    }
+    
+    #homemain {
+        background-color: #F9F9FA;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
+    #homebanner {
+        grid-column: 1 / -1;
+    }
+
+    #overview {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #overview p {
+        padding: 1em;
+    }
+
+    .mesatemple {
+        width: 80%;
+        margin: auto;
+        background-color: #b4b269;
+        grid-column: 1 / -1;
+    }
+
+    #homebottommain {
+        grid-column: 1 / -1;
+
+    }
+    /* .amentities {
+        display: none;
+    } */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    #centerfooter {
+        text-align: center;
+    }
+    #centerfooter p {
+        margin: 1em;
+    }
+
+    #rightfooter img {
+        margin: .2em;
+    }
+}
 /* make this for screen view */
 @media screen and (min-width: 64rem){
 
-.content {
-    font-size: large;
-    background-color: #b4b269;
-    width: 80%;
-    margin: auto;
-}
+    .content {
+        font-size: large;
+        background-color: #b4b269;
+        width: 80%;
+        margin: auto;
+    }
 
-nav{
-    position: absolute;
-    top: 1em;
-    right: 10em;
-}
+    nav{
+        /* position: absolute; */
+        top: 1em;
+        right: 10em;
+    }
 
-nav button {
-    display: none;
-}
+    nav button {
+        display: none;
+    }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    /* margin-left: 2vw; */
-}
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        /* margin-left: 2vw; */
+    }
 
-#homemain {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+    #overview img {
+        width: auto;
+    }
 
-#homebanner {
-    grid-column: 1 / -1;
-}
+    .mesatemple {
+        grid-column: 1 / 2;
+    }
 
-#overview {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
+    .mesatemple img {
+        width: 90%;
+    }
 
-#overview img {
-    width: auto;
-}
+    #homebottommain {
+        grid-column: 2 / -1;
 
-#overview p {
-    padding: 1em;
-}
+    }
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-}
-
-main div {
-    background-color: #F9F9FA;
-    /* margin: 1em; */
-}
+    
+    
 }

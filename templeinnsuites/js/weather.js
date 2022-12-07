@@ -10,20 +10,22 @@ function showWeather(obj){
     // let iconpath = document.querySelector("#icon-src");
     let weathericon = document.querySelector("#weathericon");
     let windspeedobj = document.querySelector("#windspeed");
-    let windchillobj = document.querySelector("#windchill");
+    let humidityobj = document.querySelector("#humidity");
     let figcaption = document.querySelector("figcaption");
     const iconURL = `http://openweathermap.org/img/wn/${obj.weather[0].icon}.png`;
     
     let weatherdesc = document.querySelector("weatherdesc");
 
-    let chill = "N/A";
+    
     let temp = obj.main.temp.toFixed(0);
     let windspeed = Math.floor(obj.wind.speed);
+    let humidity = obj.main.humidity;
+    
 
-    if (temp <= 50 && windspeed > 3){
+    // if (temp <= 50 && windspeed > 3){
 
-        chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
-    }
+    //     chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
+    // }
 
     temperature.textContent = `${temp}\u00B0F`;
     // iconpath.textContent = iconURL;
@@ -31,7 +33,7 @@ function showWeather(obj){
     weathericon.setAttribute("src", iconURL);
     figcaption.textContent = obj.weather[0].main;
     windspeedobj.textContent = `Wind Speed: ${windspeed} mph`;
-    windchillobj.textContent = `Wind Chill: ${chill}`;
+    humidityobj.textContent = `Humidity: ${humidity}%`;
 
 
     // let windchillmsg = "N/A";
