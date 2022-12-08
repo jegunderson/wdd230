@@ -24,7 +24,38 @@
         </nav>
     </header>
     <main>
-        
+        <form action="thankyou.html" method="GET">
+            <label class="myinput">Temple* <input type="text" name="templename" required> </label>                         
+            <label class="myinput"> Day* <input type="text" name="day" required> </label>
+            <label class="myinput">Name* <input type="text" name="name" required></label>
+            <label class="myinput"> Email* <input type="email" name="email" required></label>
+            <label class="myinput"> Cell Phone* <input type="tel" name="cellphone" required></label>
+            <label class="myinput"> Home State/Country* <input type="text" name="home" required pattern="{4, }"></label>
+            <label class="myinput"> Number of Rooms* <input type="number" name="rooms#" required> </label>
+
+            <h3>Room Type</h3>
+            <label class="myradio">
+                <img src="images/presidentialsuite.png" alt="president suite">
+                <input type="radio" name="level" value="Temple President">Temple President
+            </label>
+            <label class="myradio">
+                <img src="images/seniorsuite.jpg" alt="senior suite">
+                <input type="radio" name="level" value="Senior Missionaries">Senior Missionaries
+            </label>
+            <label class="myradio">
+                <img src="images/servicesuite.jpg" alt="service suite">
+                <input type="radio" name="level" value="Service Missionary">Service Missionary
+            </label>
+            <label class="myradio">
+                <img src="images/patronsuite.jpg" alt="patron suite">
+                <input type="radio" name="level" value="Patron">Patron
+            </label>
+
+            <label class="comments"> Special Requests/Comments <textarea id="comments"name="comments" cols="40" rows="5"></textarea></label>
+
+            <input id="currentdate" type="hidden" name="datetime" value="">
+            <input class="mysubmit" type="submit" value="Book Your Stay!">
+        </form>
     </main>
     <footer>
         <img src="images/logo_100.png" alt="Temple Inn & Suites logo">

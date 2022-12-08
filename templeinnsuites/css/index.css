@@ -28,6 +28,9 @@ header h1 {
     background-color: #E3B445;
     color: #80316A;
 }
+a {
+    text-decoration: none;
+}
 nav a {
     color: #E3B445;
 }
@@ -128,6 +131,7 @@ nav ul.open {
 
 h2 a {
     color: #E3B445;
+    display: block;
 }
 
 h2 {
@@ -154,6 +158,43 @@ p {
     /* font-weight: bold; */
     font-family: "Raleway", sans-serif;
     text-align: center;
+}
+
+label {
+    display: block;
+    margin: 1em;
+    text-align: left;
+    font-weight: bold;
+    color: #80316A;
+}
+
+input {
+    display: block;
+}
+
+#comments{
+    display: block;
+    /* margin: auto; */
+}
+
+form {
+    background-color: #A9A4A4;
+    padding: 1em;
+}
+
+.myradio input {
+    display: inline;
+}
+
+.myradio img {
+    display: block;
+}
+
+.mysubmit {
+    font-size: 1.2em;
+    background-color: #E3B445;
+    color: #80316A;
+    font-weight: bolder;
 }
 
 footer {
