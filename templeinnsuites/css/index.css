@@ -11,7 +11,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     background-color: #80316A;
-    text-align: center;
+    /* text-align: center; */
 }
 
 header h1 {
@@ -64,6 +64,10 @@ nav ul {
 
 nav ul.open {
     display: block;
+}
+
+#hamburgerbtn {
+    font-size: 4em;
 }
 
 #homebanner img {
@@ -151,6 +155,7 @@ h3 {
 #color_scheme p {
     border: 1px solid black;
 }
+
 p {
     /* padding: 1em; */
     margin: auto;
@@ -195,6 +200,29 @@ form {
     background-color: #E3B445;
     color: #80316A;
     font-weight: bolder;
+    margin: .5em;
+    padding: 0em;
+}
+
+#formtopimage {
+    display: none;
+}
+
+#reservations {
+    background-color: #A9A4A4;
+}
+
+#roomtype {
+    background-color: #A9A4A4;
+}
+
+#cardview div {
+    text-align: center;
+    margin: .5em;
+}
+#cardview p {
+    padding: .5
+    em;
 }
 
 footer {
@@ -240,7 +268,11 @@ a:hover {
     main div {
         background-color: #F9F9FA;
     }
-    
+   
+    header h1 {
+        display: inline;
+        margin: 1em 1em;
+    }
     #homemain {
         background-color: #F9F9FA;
         display: grid;
@@ -272,6 +304,30 @@ a:hover {
         grid-column: 1 / -1;
 
     }
+
+    #reservations {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+
+    #formtopimage {
+        display: block;
+        grid-column: 2 / -1;
+        grid-row: 1 / 7;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    #roomtype {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .odd {
+        grid-column: 1 / 2;
+    }
+
     /* .amentities {
         display: none;
     } */
@@ -293,7 +349,7 @@ a:hover {
     }
 }
 /* make this for screen view */
-@media screen and (min-width: 64rem){
+@media screen and (min-width: 78rem){
 
     .content {
         font-size: large;
@@ -303,8 +359,8 @@ a:hover {
     }
 
     nav{
-        /* position: absolute; */
-        top: 1em;
+        position: absolute;
+        top: 2em;
         right: 10em;
     }
 
@@ -335,6 +391,40 @@ a:hover {
         grid-column: 2 / -1;
 
     }
+
+    #cardview {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #reservations {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .first3 {
+        grid-column: 1 / 2;
+    }
+
+    #formtopimage {
+        grid-column: 2 / -1;
+        grid-row: 1 / 4;
+        margin: auto;
+        /* display: block; */
+    }
+
+    form h3 {
+        grid-column: 1/ -1;
+    }
+
+    .myradio {
+        margin: .5em;
+    }
+
+    label {
+        margin: .5em;
+    }
+
 
     
     

@@ -25,31 +25,36 @@
     </header>
     <main>
         <form action="thankyou.html" method="GET">
-            <label class="myinput">Temple* <input type="text" name="templename" required> </label>                         
-            <label class="myinput"> Day* <input type="text" name="day" required> </label>
-            <label class="myinput">Name* <input type="text" name="name" required></label>
-            <label class="myinput"> Email* <input type="email" name="email" required></label>
-            <label class="myinput"> Cell Phone* <input type="tel" name="cellphone" required></label>
-            <label class="myinput"> Home State/Country* <input type="text" name="home" required pattern="{4, }"></label>
-            <label class="myinput"> Number of Rooms* <input type="number" name="rooms#" required> </label>
+            <div id="reservations">
+                <label class="myinput first3">Temple* <input type="text" name="templename" required> </label>                         
+                <label class="myinput first3"> Day* <input type="text" name="day" required> </label>
+                <label class="myinput first3">Name* <input type="text" name="name" required></label>
+                <img src="images/reservations_hotel.jpg" alt="Hotel entrance" id="formtopimage">
+                <label class="myinput"> Email* <input type="email" name="email" required></label>
+                <label class="myinput"> Cell Phone* <input type="tel" name="cellphone" required></label>
+                <label class="myinput"> Home State/Country* <input type="text" name="home" required pattern="[A-Za-z]"></label>
+                <label class="myinput"> Number of Rooms* <input type="number" name="rooms#" required> </label>
+            </div>
 
             <h3>Room Type</h3>
-            <label class="myradio">
-                <img src="images/presidentialsuite.png" alt="president suite">
-                <input type="radio" name="level" value="Temple President">Temple President
-            </label>
-            <label class="myradio">
-                <img src="images/seniorsuite.jpg" alt="senior suite">
-                <input type="radio" name="level" value="Senior Missionaries">Senior Missionaries
-            </label>
-            <label class="myradio">
-                <img src="images/servicesuite.jpg" alt="service suite">
-                <input type="radio" name="level" value="Service Missionary">Service Missionary
-            </label>
-            <label class="myradio">
-                <img src="images/patronsuite.jpg" alt="patron suite">
-                <input type="radio" name="level" value="Patron">Patron
-            </label>
+            <div id="roomtype">
+                <label class="myradio odd">
+                    <img src="images/presidentialsuite.png" alt="president suite">
+                    <input type="radio" name="level" value="Temple President">Temple President
+                </label>
+                <label class="myradio even">
+                    <img src="images/seniorsuite.jpg" alt="senior suite">
+                    <input type="radio" name="level" value="Senior Missionaries">Senior Missionaries
+                </label>
+                <label class="myradio odd">
+                    <img src="images/servicesuite.jpg" alt="service suite">
+                    <input type="radio" name="level" value="Service Missionary">Service Missionary
+                </label>
+                <label class="myradio even">
+                    <img src="images/patronsuite.jpg" alt="patron suite">
+                    <input type="radio" name="level" value="Patron">Patron
+                </label>
+            </div>
 
             <label class="comments"> Special Requests/Comments <textarea id="comments"name="comments" cols="40" rows="5"></textarea></label>
 
