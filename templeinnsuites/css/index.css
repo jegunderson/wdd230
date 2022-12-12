@@ -495,6 +495,10 @@ a:hover {
         grid-template-columns: 1fr 3fr 1fr;
     }
 
+    .logo {
+        max-height: 115px;;
+    }
+
     .logoanchor {
         grid-column: 1 / 2;
         justify-self: right;
