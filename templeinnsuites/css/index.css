@@ -9,7 +9,7 @@ main div{
 }
 header {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr  1fr 3fr;
     background-color: #80316A;
     /* text-align: center; */
 }
@@ -19,9 +19,12 @@ header h1 {
     color: #E3B445;
     font-weight: bolder;
     font-family: "Merriweather", serif;
+    padding-left: .25em;
 }
 .logo {
     height: 100%;
+    max-height: 85px;
+    max-width: 100%;
 }
 
 .active {
@@ -48,10 +51,21 @@ nav ul li a {
     padding: .5em;
 }
 
-nav{
-    position: absolute;
-    top: .5em;
-    right: 1em;
+nav li {
+    padding: .5em;
+}
+
+
+nav {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    top: 0em;
+    left: 0em;
+    max-width: 80px;
 }
 
 
@@ -66,13 +80,20 @@ nav ul.open {
     display: block;
 }
 
+.logoanchor {
+    grid-column: 2 / 3;
+}
+
 #hamburgerbtn {
     font-size: 4em;
+    color:#80316A;
+    background-color: #E3B445;
 }
 
 #homebanner img {
     width: 100%;
     height: 100%;
+    z-index: 0;
     /* padding: 1em; */
 }
 
@@ -175,11 +196,17 @@ label {
 
 input {
     display: block;
+    max-width: 100%;
 }
 
 #comments{
     display: block;
     /* margin: auto; */
+}
+
+textarea {
+    display: block;
+    max-width: 100%;
 }
 
 form {
@@ -223,6 +250,68 @@ form {
 #cardview p {
     padding: .5
     em;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+}
+
+#servicesmain li {
+    margin: .5em;
+    font-weight: bold;
+}
+
+.services {
+    text-align: center;
+}
+
+.reception {
+    text-align: center;
+}
+
+.reception ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.reception p {
+    padding: .5em;
+}
+
+.reception img {
+    max-width: 80%;
+}
+
+.fulltimemissionary {
+    text-align: center;
+}
+
+.fulltimemissionary p {
+    padding: .5em;
+}
+
+#servicesmain ul {
+    padding: 1em;
+}
+
+.mycheck {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+
+#contactinfo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+}
+
+#contactinfo p {
+    margin: 1em;
+    max-width: 100%;
 }
 
 footer {
@@ -273,6 +362,11 @@ a:hover {
         display: inline;
         margin: 1em 1em;
     }
+
+    .logo {
+        max-height: 105px;
+    }
+
     #homemain {
         background-color: #F9F9FA;
         display: grid;
@@ -328,9 +422,48 @@ a:hover {
         grid-column: 1 / 2;
     }
 
-    /* .amentities {
-        display: none;
-    } */
+    #servicesmain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #servicesmain li {
+        color: #80316A;
+    }
+
+    .services {
+        margin: 1em;
+    }
+
+    .amentities {
+        margin: 1em;
+    }
+
+    .reception {
+        grid-column: 1 / -1;
+    }
+
+    .fulltimemissionary {
+        grid-column: 1 / -1;
+    }
+
+    .suite {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .suite h3{
+        grid-column: 1 / -1;
+    }
+
+    .suite img {
+        margin: 1em;
+    }
+
+    #contactmain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
     footer {
         display: grid;
@@ -358,10 +491,25 @@ a:hover {
         margin: auto;
     }
 
+    header {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .logoanchor {
+        grid-column: 1 / 2;
+        justify-self: right;
+    }
+
     nav{
-        position: absolute;
+        grid-column: 3 / -1;
+        /* position: absolute; */
         top: 2em;
         right: 10em;
+        max-width: 100%;
+    }
+
+    nav li {
+        padding: 0em;
     }
 
     nav button {
@@ -397,21 +545,21 @@ a:hover {
         grid-template-columns: 1fr 1fr;
     }
 
-    #reservations {
+    /* #reservations {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+    } */
 
     .first3 {
         grid-column: 1 / 2;
     }
-
+/* 
     #formtopimage {
         grid-column: 2 / -1;
-        grid-row: 1 / 4;
+        grid-row: 1 / -1;
         margin: auto;
-        /* display: block; */
-    }
+        display: block;
+    } */
 
     form h3 {
         grid-column: 1/ -1;
@@ -425,6 +573,53 @@ a:hover {
         margin: .5em;
     }
 
+    #servicesmain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #servicesmain li {
+        color: #80316A;
+    }
+
+    .services {
+        margin: 1em;
+    }
+
+    .amentities {
+        margin: 1em;
+    }
+
+    .reception {
+        grid-column: 1 / -1;
+    }
+
+    .fulltimemissionary {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fulltimemissionary h2 {
+        grid-column: 1 / -1;
+    }
+
+    .fulltimemissionary p {
+        grid-column: 1 /-1;
+    }
+
+    .fulltimemissionary div {
+        display: block;
+        /* grid-template-columns: 1fr 3fr; */
+    }
+
+    .suiteheader {
+        margin: .5em;
+    }
+
+    .fulltimemissionary a {
+        grid-column: 1 / -1;
+    }
 
     
     

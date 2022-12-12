@@ -1,6 +1,7 @@
 {
     "temples" : [
         {
+            "id":"temple1",
             "name" : "Mesa Arizona",
             "imageURL" : "./images/mesa_temple_temple.jpg",
             "street" : "101 S LeSueur",
@@ -22,6 +23,7 @@
             "Saturday 31 December 2022"]
         },
         {
+            "id":"temple2",
             "name" : "Concepcion Chile",
             "imageURL" : "./images/concepcion_chile_temple.jpeg",
             "street" : "1525 Pedro de Valdivia",
@@ -41,11 +43,12 @@
             "Saturday 31 December 2022"]
         },
         {
+            "id":"temple3",
             "name" : "Kyiv Ukraine",
             "imageURL" : "./images/kyiv_ukraine_temple_lds.jpg",
             "address" : "1 Yabluneva Street v. Sofiivs’ka Borshchagivka Kyevo-Sviatoshyns’ky Rayon, Kyivs’ka Oblast, 08131, Ukraine,",
             "street" : "1 Yabluneva Street",
-            "citystatezip" : "Sofiivs’ka Borshchagivkae Kyivs’ka Oblast, 08131, Ukraine",
+            "citystatezip" : "Kyevo-Sviatoshyns’ky Rayon, Kyiv, Ukraine",
             "phone" : "(380) 44-371-4088",
             "email" : "",
             "services" : ["No clothing rental available",
@@ -61,6 +64,7 @@
             "Saturday 31 December 2022"]
         },
         {
+            "id":"temple4",
             "name" : "Rome Italy",
             "imageURL" : "./images/rome_italy_temple.png",
             "street" : "Via di Settebagni 376",
