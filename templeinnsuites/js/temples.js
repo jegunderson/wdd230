@@ -34,7 +34,7 @@ function displayTemple(temple)
         <p>${temple.phone}</p>
         <p> ${temple.services}</p>
         <p> Upcoming Closures: ${temple.closures}</p>
-        <label><input class="mycheck" id="check-${temple.id}" type="checkbox" onclick="likeTemple(this);"></label>
+        <label class="checkbox"><input class="mycheck" id="check-${temple.id}" type="checkbox" onclick="likeTemple(this);"></label>
         <p> Like This Temple! </p>
         `;
     cardview.appendChild(cardelt);
