@@ -131,6 +131,7 @@ nav ul.open {
 
 .mesatemple p {
     margin: .7em;
+    font-weight: bold;
 }
 
 .weather {
@@ -320,6 +321,7 @@ ul {
 footer {
     background-color: #80316A;
     text-align: center;
+    font-weight: bold;
 }
 footer div{
     background-color: #80316A;
