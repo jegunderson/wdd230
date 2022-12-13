@@ -314,6 +314,10 @@ ul {
     max-width: 100%;
 }
 
+.resources a {
+    display: block;
+}
+
 footer {
     background-color: #80316A;
     text-align: center;
