@@ -26,14 +26,23 @@
     <main>
         <form action="thankyou.html" method="GET">
             <div id="reservations">
-                <label class="myinput first3">Temple* <input type="text" name="templename" required> </label>                         
-                <label class="myinput first3"> Day* <input type="text" name="day" required> </label>
+                <label class="myinput first3">Temple City Name* <input type="text" name="templename" required> </label>                         
+                <label class="myinput first3"> Check-in Date* <input type="text" name="day" placeholder="08/15/23" required pattern="[0-9]{2}/[0-9]{2}/[0-9]{2}"> </label>
+                <label class="myinput first3"> Check-out Date* <input type="text" name="day" placeholder="08/21/23" required> </label>
                 <label class="myinput first3">Name* <input type="text" name="name" required></label>
                 <img src="images/reservations_hotel.jpg" alt="Hotel entrance" id="formtopimage">
                 <label class="myinput"> Email* <input type="email" name="email" required></label>
                 <label class="myinput"> Cell Phone* <input type="tel" name="cellphone" required></label>
-                <label class="myinput"> Home State/Country* <input type="text" name="home" required pattern="{3,30}"></label>
-                <label class="myinput"> Number of Rooms* <input type="number" name="rooms#" required> </label>
+                <label class="myinput"> Home State/Country* <input type="text" name="homestate" required></label>
+                <label class="myinput"> Home Address* <input type="text" name="homeaddress" required></label>
+                <label for="numberofrooms">Number of Rooms*:
+                    <select name="#rooms" id="rooms" required>
+                        <option value="1">1</option>
+                        <option value=2>2</option>
+                        <option value="3">3</option>
+                        <option value=4>4</option>
+                    </select>
+                </label>
             </div>
 
             <h3>Room Type</h3>
