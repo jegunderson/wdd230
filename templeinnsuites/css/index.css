@@ -259,6 +259,10 @@ form {
     display: block;
 }
 
+#numberofrooms {
+    padding: .2em;
+}
+
 .mysubmit {
     font-size: 1.2em;
     background-color: #E3B445;
